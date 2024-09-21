@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% load static %}
+    </head>
+    <body>
+        <img src="{% static '8.jpeg' %}" style="float: left;" />
+        <br><br>
+        <h1>Country = {{weather.country}}</h1>
+        <h1>Temprature = {{weather.temprature}}</h1>
+        <h1>Humidity = {{weather.humidity}}</h1>
+        <h1>WindSpeed = {{weather.wind_speed}}</h1>
+        <h1>Precipitation = {{weather.precipitation}}</h1>
+    </body>
+</html>

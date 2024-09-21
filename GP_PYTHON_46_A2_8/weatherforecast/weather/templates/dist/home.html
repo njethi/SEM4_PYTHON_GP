@@ -1,0 +1,19 @@
+<html>
+    <head>
+        {% load static %}
+    </head>
+    <body>
+        <img src="{% static '13.jpg' %}" />
+        <br><br>
+        <table border="1" rules="all">
+            <tr>
+                <th>Country Name</th>
+            </tr>
+            {% for i in weather %}
+            <tr>
+                <td><a href="{% url 'detail' i.id %}">{{i.country}}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
